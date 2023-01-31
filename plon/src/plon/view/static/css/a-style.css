@@ -1,0 +1,135 @@
+html, body {
+    color: #71efff;
+    margin: 0;
+    padding: 0;
+    font-family: "Cousine";
+    background: transparent;
+}
+
+body {
+    font-size: 0.8em;
+    /* letter-spacing: 0.1px; */
+    /* font-family: "Courier New"; */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1
+    }
+    30% {
+        opacity: 0.2
+    }
+    60% {
+        opacity: .3
+    }
+    80% {
+        opacity: 1
+    }
+}
+
+
+html {
+    background: #222;
+}
+
+:root {
+    --debug-outline: dotted 1px #853585;
+}
+
+.debug-outline body > * {
+    outline: var(--debug-outline);
+}
+
+.debug-outline-hover *:hover {
+    outline: var(--debug-outline);
+}
+
+
+.flex-down {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.down {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex.across {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-across {
+    flex-direction: row;
+}
+
+
+ol.no-style, ul.no-style {
+    list-style: none;
+}
+
+.padding-0, .no-padding {
+    padding: 0;
+}
+
+.margin-0, .no-margin {
+    margin: 0;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0em;
+    /* height: 1em; */
+    /* background: #eee; */
+}
+
+.left-0 {
+    left: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+
+.background-111 {
+    background: #111;
+}
+
+
+.default button {
+    background: #050505;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.8em 1.5em;
+    border-radius: 3em;
+    cursor: pointer;
+}
+
+.default button:hover,.default button:focus {
+    background: #1e1e1e;
+}
+
+.border-top-solid-1px {
+    border-top: solid 1px;
+}
+
+.border-color-000 {
+    border-color: #000;
+}

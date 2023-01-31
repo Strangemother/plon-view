@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load link %}
+<html lang="en" class='debug debug-outline-hover'>
+    <head>
+        {% js "js/support.js" %}
+        {% css "css/a-style.css" %}
+        {% css "css/cousine-font.css" %}
+
+        <meta charset="UTF-8">
+
+        <title>Primary View</title>
+    </head>
+
+    <body version=1 class="default primary flex down">
+
+        <header class='sticky flex-across'>
+            <section class="flex across">
+                <nav>
+                    <ol class="window-menu no-style flex across margin-0 padding-0">
+                        <li><a>File</a></li>
+                        <li><a>Edit</a></li>
+                        <li><a>About</a></li>
+                    </ol>
+                </nav>
+
+                <span class="spacer flex-grow"></span>
+                <div class="window-controls">
+                    <ul class='default flex across no-style no-margin no-padding'>
+                        <li class='min'>_</li>
+                        <li class='max'>=</li>
+                        <li class='close'>x</li>
+                    </ul>
+                </div>
+            </section>
+        </header>
+
+        {% block main_container %}
+        <main class="background-111">
+            {% block main_content %}{% endblock main_content %}
+        </main>
+        {% endblock main_container %}
+
+        <footer class="fixed-bottom left-0 right-0 flex across border-top-solid-1px">
+            <div class="status-area">
+                {% block status_area_content %}
+                <span>status bar</span>
+                {% endblock status_area_content %}
+            </div>
+            <span class="spacer flex-grow"></span>
+            <span>0</span>
+        </footer>
+
+    </body>
+</html>

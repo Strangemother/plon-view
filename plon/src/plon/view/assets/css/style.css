@@ -1,0 +1,31 @@
+html {
+    background: #000;
+    font-family: "Cousine";
+}
+
+html, body {
+    color: #71efff;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 0.8em;
+    /* letter-spacing: 0.1px; */
+    /* font-family: "Courier New"; */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1
+    }
+    30% {
+        opacity: 0.2
+    }
+    60% {
+        opacity: .3
+    }
+    80% {
+        opacity: 1
+    }
+}

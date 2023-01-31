@@ -1,0 +1,17 @@
+/**
+ * The root0 styles, for root styles _before_ the core installed styles.
+ *
+ * This is to ensure any UI is blanked; with a base text and background color, and font.
+ */
+
+:root {
+    --nearly-black: #101010;
+    --strangemother-red: #880000;
+    --default-font: system-ui;
+}
+
+html, body {
+    background: var(--nearly-black);
+    color: var(--strangemother-red);
+    font-family: var(--default-font);
+}
